@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./script.js" defer></script>
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/Logo.svg" alt="alura-logo" class="alura-logo" />
+        </header>
+
+        <div class="content">
+            <section class="form-section">
+                <form action="">
+                    <textarea
+                        placeholder="Ingrese el texto aquí"
+                        id="texto"
+                    ></textarea>
+                    <div class="aclaracion">
+                        <p>
+                            <img src="./img/exclamacion.svg" alt="" />Solo
+                            letras minúsculas y sin acentos
+                        </p>
+                    </div>
+
+                    <input
+                        type="submit"
+                        value="Encriptar"
+                        class="boton-encriptar"
+                        id="boton-encriptar"
+                    />
+                    <input
+                        type="submit"
+                        value="Desencriptar"
+                        class="boton-desencriptar"
+                        id="boton-desencriptar"
+                    />
+                </form>
+            </section>
+            <section class="section-resultado">
+                <div id="info" class="info">
+                    <img src="./img/Muñeco.svg" alt="" class="munieco" />
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div id="caja-resultado">
+                    <p id="resultado" class="ocultar">a</p>
+                    <input
+                        type="button"
+                        value="Copiar"
+                        class="ocultar boton-copiar"
+                    />
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
